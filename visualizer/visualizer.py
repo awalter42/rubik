@@ -2,6 +2,7 @@ import vpython
 from cube import Cube
 from rubik import Rubik
 from time import sleep
+import sys
 
 
 def makeRubik():
@@ -47,10 +48,62 @@ def makeRubik():
 
 
 if __name__ == '__main__':
-	scene = vpython.canvas(width=2000, height=900, background=vpython.color.black)
 
+	if (len(sys.argv) != 2):
+		print('wrong number of arguments')
+		exit()
+
+	instructions = sys.argv[1].split()
+
+	scene = vpython.canvas(width=2000, height=900, background=vpython.color.black)
 	rubik = makeRubik()
-	sleep(2)
-	rubik.D(2)
-	sleep(2)
-	rubik.D_prime()
+
+	for inst in instructions:
+		sleep(0.8)
+		match inst:
+			case 'F':
+				rubik.F(1)
+			case 'F\'':
+				rubik.F_prime()
+			case 'F2':
+				rubik.F(2)
+
+			case 'B':
+				rubik.B(1)
+			case 'B\'':
+				rubik.B_prime()
+			case 'B2':
+				rubik.B(2)
+
+			case 'R':
+				rubik.R(1)
+			case 'R\'':
+				rubik.R_prime()
+			case 'R2':
+				rubik.R(2)
+
+			case 'L':
+				rubik.L(1)
+			case 'L\'':
+				rubik.L_prime()
+			case 'L2':
+				rubik.L(2)
+
+			case 'U':
+				rubik.U(1)
+			case 'U\'':
+				rubik.U_prime()
+			case 'U2':
+				rubik.U(2)
+
+			case 'D':
+				rubik.D(1)
+			case 'D\'':
+				rubik.D_prime()
+			case 'D2':
+				rubik.D(2)
+
+			case _:
+				print(f"{inst} is not a good instruction: ignored")
+
+

@@ -13,7 +13,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50*n):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 0, 1), angle=(-vpython.pi / 2)/50 , origin=vpython.vector(0,0,1.05))
 
@@ -25,7 +25,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 0, 1), angle=(vpython.pi / 2)/50 , origin=vpython.vector(0,0,1.05))
 
@@ -38,7 +38,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50*n):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 0, 1), angle=(vpython.pi / 2)/50 , origin=vpython.vector(0,0,-1.05))
 
@@ -50,7 +50,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 0, 1), angle=(-vpython.pi / 2)/50 , origin=vpython.vector(0,0,-1.05))
 
@@ -62,7 +62,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50*n):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(1, 0, 0), angle=(vpython.pi / 2)/50 , origin=vpython.vector(-1.05,0,0))
 
@@ -73,7 +73,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(1, 0, 0), angle=(-vpython.pi / 2)/50 , origin=vpython.vector(-1.05,0,0))
 
@@ -85,7 +85,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50*n):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(1, 0, 0), angle=(-vpython.pi / 2)/50 , origin=vpython.vector(1.05,0,0))
 
@@ -96,7 +96,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(1, 0, 0), angle=(vpython.pi / 2)/50 , origin=vpython.vector(1.05,0,0))
 
@@ -108,7 +108,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50*n):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 1, 0), angle=(-vpython.pi / 2)/50 , origin=vpython.vector(0,1.05,0))
 
@@ -119,7 +119,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 1, 0), angle=(vpython.pi / 2)/50 , origin=vpython.vector(0,1.05,0))
 
@@ -131,7 +131,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50*n):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 1, 0), angle=(vpython.pi / 2)/50 , origin=vpython.vector(0,-1.05,0))
 
@@ -142,7 +142,7 @@ class Rubik:
 				lst.append(c.object)
 
 		for r in range (0, 50):
-			vpython.rate(30)
+			vpython.rate(60)
 			for c in lst:
 				c.rotate(axis=vpython.vector(0, 1, 0), angle=(-vpython.pi / 2)/50 , origin=vpython.vector(0,-1.05,0))
 
