@@ -108,16 +108,8 @@ def Dprime_move():
 
 
 
-
-
-if __name__ == '__main__':
-	parser = argparse.ArgumentParser()
-	parser.add_argument('moves', type=str)
-	parser.add_argument("-v", "--visualisation", action="store_true", default=False, help='concatenates scrambler and solution for visualiser')
-	args = parser.parse_args()
-
-
-	instructions = args.moves.split()
+def scramble(moves):
+	instructions = moves.split()
 
 
 	for inst in instructions:
@@ -165,7 +157,16 @@ if __name__ == '__main__':
 				D_move(2)
 
 			case _:
-				print(f"{inst} is not a good instruction: ignored")
+				print(f"{inst} is not a good instruction: ignored\n")
+
+
+if __name__ == '__main__':
+	parser = argparse.ArgumentParser()
+	parser.add_argument('moves', type=str)
+	parser.add_argument("-v", "--visualisation", action="store_true", default=False, help='concatenates scrambler and solution for visualiser')
+	args = parser.parse_args()
+
+	scramble(args.moves)
 
 
 	print(F, B, R, L, U, D, sep='\n\n')
